@@ -41,8 +41,8 @@ Before running any code, ensure the required R packages have been installed. Set
 ### Fit the model and summarize the results
 `/scomp/fitCOMP.R`
 - Fit the spatial mean-COMP regression model to the simulated dataset
-- Obtain summary statistics for model parameters
 - Posterior samples are saved in the file `/scomp/fit/simCOMP.RData`
+- Obtain summary statistics for model parameters
 
 
 ## Spatial mean-ZICOMP regression model
@@ -62,5 +62,6 @@ Before running any code, ensure the required R packages have been installed. Set
 ### Fit the model and summarize the results
 `/szicomp/fitZICOMP.R`
 - Fit the spatial mean-ZICOMP regression model to the simulated dataset
-- Obtain summary statistics for model parameters
 - Posterior samples are saved in the file `/szicomp/fit/simZICOMP.RData`
+- Obtain summary statistics for model parameters
+
