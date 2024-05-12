@@ -34,9 +34,9 @@ source(path.r)
 
 Rf_fitSZICOMP(
   y, X, M, A, t, th, loglam,
-  new.run = T, n.iter = 1000000, n.save = 2000,
-  # new.run = T, n.iter = 200, n.save = 100, # for a test run
-  n.thin = 20, n.update.basis = 200, n.core = 20,
+  # new.run = T, n.iter = 1000000, n.save = 2000,
+  new.run = T, n.iter = 200, n.save = 100, # for a test run
+  n.thin = 20, n.update.basis = 200, n.core = 1,
   path.cpp, filename = 'fit/simZICOMP.RData')
 
 
