@@ -27,7 +27,7 @@ devtools::install_github("thomas-fung/mpcmp")
 ## Spatial mean-COMP regression model
 Before running any code, ensure the required R packages have been installed. Set the R working directory to `/scomp`.
 
-### Pre-computing for spline approximation
+### Pre-computation for spline approximation
 `/scomp/appx.R`
 - Generate a number of particles over $\Psi = [\log(0.01), \log(\mu_{\max})] \times [0.01, \nu_{\max}]$ and find $\lambda(\mu, \nu)$ for each particle using the Newtwon-Raphson algorithm
 - This step corresponds to Section 3.1 of the manuscript
@@ -43,3 +43,24 @@ Before running any code, ensure the required R packages have been installed. Set
 - Fit the spatial mean-COMP regression model to the simulated dataset
 - Obtain summary statistics for model parameters
 - Posterior samples are saved in the file `/scomp/fit/simCOMP.RData`
+
+
+## Spatial mean-ZICOMP regression model
+Before running any code, ensure the required R packages have been installed. Set the R working directory to `/szicomp`.
+
+### Pre-computation for spline approximation
+`/szicomp/appx.R`
+- Generate a number of particles over $\Psi = [\log(0.01), \log(\mu_{\max})] \times [0.01, \nu_{\max}]$ and find $\lambda(\mu, \nu)$ for each particle using the Newtwon-Raphson algorithm
+- This step corresponds to Section 3.1 of the manuscript
+- All components are saved in the file `/szicomp/appx/set.RData`
+
+### Simulate data
+`/szicomp/data.R`
+- Generate data from the spatial mean-COMP regression model
+- All components are saved in file `/szicomp/data/sim.RData`
+
+### Fit the model and summarize the results
+`/szicomp/fitZICOMP.R`
+- Fit the spatial mean-ZICOMP regression model to the simulated dataset
+- Obtain summary statistics for model parameters
+- Posterior samples are saved in the file `/szicomp/fit/simZICOMP.RData`
