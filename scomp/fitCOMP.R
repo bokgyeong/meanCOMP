@@ -1,5 +1,5 @@
 rm(list = ls())
-require(Rcpp); require(RcppArmadillo); require(sitmo)
+require(akima); require(Rcpp); require(RcppArmadillo); require(sitmo)
 
 path.r = 'src/RFtns.R'
 path.cpp = 'src/RcppFtns.cpp'

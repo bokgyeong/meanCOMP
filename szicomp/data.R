@@ -1,5 +1,5 @@
 rm(list=ls())
-require(ngspatial); require(foreach)
+require(akima); require(ngspatial); require(foreach)
 require(Rcpp); require(RcppArmadillo)
 
 
