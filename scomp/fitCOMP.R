@@ -4,13 +4,11 @@ require(Rcpp); require(RcppArmadillo); require(sitmo)
 path.r = 'src/RFtns.R'
 path.cpp = 'src/RcppFtns.cpp'
 
-dataname = 'under'
-
 # ==============================================================================
 # fit the spatial mean-parameterized COMP regression model ----
 # ==============================================================================
 
-load(paste0('data/', dataname, '.RData'))
+load('data/sim.RData')
 load('appx/set.RData')
 
 q = 100
@@ -39,7 +37,7 @@ Rf_fitSCOMP(
   new.run = T, n.iter = 1000000, n.save = 2000,
   # new.run = T, n.iter = 200, n.save = 100, # for a test run
   n.thin = 20, n.update.basis = 200, n.core = 20,
-  path.cpp, filename = paste0('fit/', dataname, 'COMP.RData'))
+  path.cpp, filename = 'fit/simCOMP.RData')
 
 
 
@@ -50,8 +48,8 @@ require(coda); require(batchmeans); require(tidyverse)
 bm_se = function(x){ bm(x)$se }
 hpd = function(x){ paste0('(', round(HPDinterval(as.mcmc(x))[1], 2), ',', round(HPDinterval(as.mcmc(x))[2], 2), ')') }
 
-load(paste0('data/', dataname, '.RData'))
-load(paste0('fit/', dataname, 'COMP.RData'))
+load('data/sim.RData')
+load('fit/simCOMP.RData')
 
 p = ncol(X)
 q = 100

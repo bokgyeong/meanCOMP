@@ -8,7 +8,7 @@ set.seed(1)
 # simulation from the spatial mean-parameterized ZICOMP regression model ----
 # ==============================================================================
 
-filename = "data/under.RData"
+filename = "data/sim.RData"
 
 # design matrix
 n = 30
