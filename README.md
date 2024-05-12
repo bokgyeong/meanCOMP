@@ -3,7 +3,7 @@ Authors: Bokgyeong Kang, John Hughes, and Murali Haran
 
 We provide instructions for fitting spatial mean-parameterized Conway-Maxwell-Poisson (mean-COMP) and zero-inflated mean-parameterized Conway-Maxwell-Poisson (mean-ZICOMP) regression models. 
 
-## Required Packages:
+## Required packages:
 The code has been tested with R version 4.2.2, "Innocent and Trusting."  The following R packages must be installed before the code will run successfully:
 
 - `Rcpp`
@@ -31,9 +31,15 @@ Before running any code, ensure the required R packages have been installed. Set
 `/scomp/appx.R`
 - Generate a number of particles over $\Psi = [\log(0.01), \log(\mu_{\max})] \times [0.01, \nu_{\max}]$ and find $\lambda(\mu, \nu)$ for each particle using the Newtwon-Raphson algorithm
 - This step corresponds to Section 3.1 of the manuscript
-- All components are saved in file `/scomp/appx/set.RData`
+- All components are saved in the file `/scomp/appx/set.RData`
 
 ### Simulate data
 `/scomp/data.R`
 - Generate data from the spatial mean-COMP regression model
 - All components are saved in file `/scomp/data/sim.RData`
+
+### Fit the model and summarize the results
+`/scomp/fitCOMP.R`
+- Fit the spatial mean-COMP regression model to the simulated dataset
+- Obtain summary statistics for model parameters
+- Posterior samples are saved in the file `/scomp/fit/simCOMP.RData`
