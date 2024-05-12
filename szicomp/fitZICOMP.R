@@ -7,7 +7,7 @@ path.cpp = 'src/RcppFtns.cpp'
 dataname = 'under'
 
 # ==============================================================================
-# fit the spatial mean-parameterized COMP regression model ----
+# fit the spatial mean-parameterized ZICOMP regression model ----
 # ==============================================================================
 
 load(paste0('data/', dataname, '.RData'))
