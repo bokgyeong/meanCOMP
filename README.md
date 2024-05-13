@@ -36,7 +36,7 @@ Before running any code, ensure the required R packages have been installed. Set
 ### Simulate data
 `/scomp/data.R`
 - Generate data from the spatial mean-COMP regression model
-- All components are saved in file `/scomp/data/sim.RData`
+- All components are saved in the file `/scomp/data/sim.RData`
 
 ### Fit the model and summarize the results
 `/scomp/fitCOMP.R`
@@ -57,7 +57,7 @@ Before running any code, ensure the required R packages have been installed. Set
 ### Simulate data
 `/szicomp/data.R`
 - Generate data from the spatial mean-COMP regression model
-- All components are saved in file `/szicomp/data/sim.RData`
+- All components are saved in the file `/szicomp/data/sim.RData`
 
 ### Fit the model and summarize the results
 `/szicomp/fitZICOMP.R`
