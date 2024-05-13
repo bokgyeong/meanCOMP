@@ -1,7 +1,7 @@
 # Supplemental Code for "Fast Bayesian Inference for Spatial Mean-Parameterized Conway-Maxwell-Poisson Models"
 Authors: Bokgyeong Kang, John Hughes, and Murali Haran
 
-We provide instructions for fitting spatial mean-parameterized Conway-Maxwell-Poisson (mean-COMP) and zero-inflated mean-parameterized Conway-Maxwell-Poisson (mean-ZICOMP) regression models. 
+We provide instructions for implementing spatial mean-parameterized Conway-Maxwell-Poisson (mean-COMP) and zero-inflated mean-parameterized Conway-Maxwell-Poisson (mean-ZICOMP) regression models. 
 
 ## Required packages:
 The code has been tested with R version 4.2.2, "Innocent and Trusting."  The following R packages must be installed before the code will run successfully:
